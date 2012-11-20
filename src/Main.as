@@ -1,15 +1,22 @@
 package {
 
+import be.devine.cp3.model.AppModel;
+
 import flash.display.Sprite;
-import flash.text.TextField;
+import flash.display.StageAlign;
+import flash.display.StageScaleMode;
 
 public class Main extends Sprite
 {
+
+    private var _appModel:AppModel;
+
     public function Main()
     {
-        var textField:TextField = new TextField();
-        textField.text = "Hello, World";
-        addChild(textField);
+        stage.align = StageAlign.TOP_LEFT;
+        stage.scaleMode = StageScaleMode.NO_SCALE;
+
+        _appModel = new AppModel();
     }
 }
 }
